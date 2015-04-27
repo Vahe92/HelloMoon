@@ -57,4 +57,10 @@ public class HelloMoonFragment extends Fragment{
         super.onDestroy();
         mPlayer.stop();
     }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setRetainInstance(true);
+    }
 }
